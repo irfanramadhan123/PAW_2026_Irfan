@@ -5,6 +5,8 @@
 - **NIM**   : 124140159
 - **Kelas** : RB
 
+Hosting Github: https://irfanramadhan123.github.io/PAW_2026_Irfan/
+
 Repository ini berisi tugas pertemuan ke-2 mata kuliah Pengembangan Aplikasi Web (PAW) yang berfokus pada pembuatan halaman web statis bertema ITERA dengan memanfaatkan struktur semantik HTML:
 
 1. **Halaman Utama (`index.html`)**
