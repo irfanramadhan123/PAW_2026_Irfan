@@ -9,7 +9,6 @@ body {
     background-color: #f2f2f2;
 }
 
-/* navbar, warnanya sama seperti tugas minggu 2 */
 nav {
     background-color: rgb(29, 158, 76);
     height: 70px;
@@ -39,7 +38,6 @@ nav a.aktif {
     border-bottom: 2px solid white;
 }
 
-/* layout utama pakai grid */
 .wadah {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -66,7 +64,6 @@ h1 {
     color: rgb(29, 158, 76);
 }
 
-/* form */
 fieldset {
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -196,7 +193,6 @@ footer p {
     margin: 12px;
 }
 
-/* responsive untuk layar kecil */
 @media (max-width: 700px) {
     .wadah,
     .baris-form {
