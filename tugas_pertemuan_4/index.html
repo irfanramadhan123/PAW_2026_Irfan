@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran UKM ITERA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="images/logo-itera.jpg" alt="Logo ITERA" width="40"></li>
+                <li><a href="index.html" class="aktif">Pendaftaran</a></li>
+                <li><a href="detail.html">Detail Pendaftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wadah">
+        <section class="box">
+            <h1>Pendaftaran Anggota UKM Robotika ITERA</h1>
+            <p>Isi data di bawah ini dengan benar, lalu tekan tombol daftar.</p>
+
+            <form action="detail.html" method="get">
+                <fieldset>
+                    <legend>Data Diri</legend>
+                    <div class="baris-form">
+                        <div class="isian">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        <div class="isian">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" placeholder="124140xxx" pattern="[0-9]{9}"
+                                title="NIM terdiri dari 9 angka" required>
+                        </div>
+                        <div class="isian">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="nama@student.itera.ac.id" required>
+                        </div>
+                        <div class="isian">
+                            <label for="tgl_lahir">Tanggal Lahir</label>
+                            <input type="date" id="tgl_lahir" name="tgl_lahir">
+                        </div>
+                        <div class="isian">
+                            <label>Jenis Kelamin</label>
+                            <div class="pilihan">
+                                <input type="radio" id="laki" name="jk" value="laki-laki" required>
+                                <label for="laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="jk" value="perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="isian">
+                            <label for="prodi">Program Studi</label>
+                            <select id="prodi" name="prodi" required>
+                                <option value="">Pilih Prodi</option>
+                                <optgroup label="Jurusan Teknologi Produksi dan Industri">
+                                    <option value="informatika">Teknik Informatika</option>
+                                    <option value="elektro">Teknik Elektro</option>
+                                    <option value="mesin">Teknik Mesin</option>
+                                </optgroup>
+                                <optgroup label="Jurusan Sains">
+                                    <option value="fisika">Fisika</option>
+                                    <option value="matematika">Matematika</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Minat dan Pengalaman</legend>
+                    <label>Divisi yang diminati</label>
+                    <div class="pilihan">
+                        <input type="checkbox" id="programming" name="divisi" value="programming">
+                        <label for="programming">Programming</label>
+                        <input type="checkbox" id="mekanik" name="divisi" value="mekanik">
+                        <label for="mekanik">Mekanik</label>
+                        <input type="checkbox" id="elektronika" name="divisi" value="elektronika">
+                        <label for="elektronika">Elektronika</label>
+                    </div>
+
+                    <label for="angkatan">Angkatan</label>
+                    <input list="daftar-angkatan" id="angkatan" name="angkatan" placeholder="Contoh: 2024">
+                    <datalist id="daftar-angkatan">
+                        <option value="2022">
+                        <option value="2023">
+                        <option value="2024">
+                        <option value="2025">
+                    </datalist>
+
+                    <label for="alasan">Alasan ingin bergabung</label>
+                    <textarea id="alasan" name="alasan" rows="4" placeholder="Tulis alasan kamu"></textarea>
+                </fieldset>
+
+                <div class="tombol">
+                    <button type="reset" class="btn-reset">Reset</button>
+                    <button type="submit" class="btn-daftar">Daftar</button>
+                </div>
+            </form>
+        </section>
+
+        <aside class="box info">
+            <h2>Informasi</h2>
+            <p>Pendaftaran dibuka sampai <time datetime="2026-10-20">20 Oktober 2026</time>.</p>
+            <p>Setelah daftar, kamu akan diarahkan ke halaman detail pendaftar.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright by Muhammad Irfan Ramadhan - 124140159</p>
+    </footer>
+</body>
+
+</html>

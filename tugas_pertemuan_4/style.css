@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* navbar, warnanya sama seperti tugas minggu 2 */
+nav {
+    background-color: rgb(29, 158, 76);
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50px;
+    height: 100%;
+}
+
+nav img {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover,
+nav a.aktif {
+    border-bottom: 2px solid white;
+}
+
+/* layout utama pakai grid */
+.wadah {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px 60px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.info {
+    align-self: start;
+    border-left: 4px solid rgb(29, 158, 76);
+}
+
+h1 {
+    margin-top: 0;
+    color: rgb(29, 158, 76);
+}
+
+/* form */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.baris-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.isian {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input:not([type]),
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(29, 158, 76);
+}
+
+.pilihan {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.pilihan label {
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+.tombol {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button,
+.btn-daftar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-daftar {
+    background-color: rgb(29, 158, 76);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-daftar:hover {
+    background-color: rgb(20, 120, 57);
+}
+
+.btn-reset {
+    background-color: #ddd;
+}
+
+/* tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(29, 158, 76);
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #d9efe1;
+}
+
+.kembali {
+    display: inline-block;
+}
+
+footer {
+    background-color: rgb(29, 158, 76);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin: 12px;
+}
+
+/* responsive untuk layar kecil */
+@media (max-width: 700px) {
+    .wadah,
+    .baris-form {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        padding-left: 15px;
+    }
+}
